@@ -216,6 +216,7 @@
       // Shrink No, grow SÃ­
       noScale  = Math.max(0, parseFloat((noScale  - 0.12).toFixed(4)));
       yesScale = Math.min(2.5, parseFloat((yesScale + 0.10).toFixed(4)));
+      btnYes.textContent = YES_TEXTS[Math.min(noClicks - 1, YES_TEXTS.length - 1)];
 
       btnYes.style.transform = `scale(${yesScale})`;
 
